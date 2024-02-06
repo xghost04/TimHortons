@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background: hsl(0, 100%, 98%);
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    padding: 15px 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: rgb(255, 61, 61);
+    background: linear-gradient(0deg, hsl(0, 100%, 98%) 0%, rgb(255, 50, 50) 100%);
+}
+
+.title a {
+    font-family: Kalam;
+    color: #312b2b;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+/*navigation menu*/
+nav {
+    position: relative;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 5px 15px;
+    display: flex;
+    z-index: 1;
+    color: #fff;
+    background: hsl(0, 100%, 98%);
+}
+
+nav a {
+    text-decoration: none;
+    color: #303030;
+    background: hsl(0, 100%, 98%);
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px rgb(255, 54, 54), 0px 0px 30px rgb(255, 54, 104);
+}
+
+/*Section*/
+section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 140px;
+    animation: slideIn 2s forwards;
+    opacity: 0;
+}
+
+section .contentBx {
+    position: relative;
+    max-width: 600px;
+    z-index: 1000;
+}
+
+section .contentBx h2 {
+    font-size: 50px;
+    color: #a30808;
+}
+
+section .contentBx p {
+    font-size: 18px;
+    color: #000000;
+}
+
+section .imgBx img {
+    position: relative;
+    border-radius: 30px;
+    width: 500px;
+    margin-top: 100px;
+    z-index: 10;
+    animation: slideIn 2s forwards;
+    opacity: 0;
+}
+
+section .imgBx-logo img {
+    position: relative;
+    border-radius: 30px;
+    width: 500px;
+    margin-top: 100px;
+    z-index: 10000;
+    animation: floatAnimation 3s ease infinite;
+    opacity: 1;
+}
+
+.menu-section .contentBx h2 {
+    color: #eb781a;
+}
+
+.locations-section .contentBx h2 {
+    color: #2f4079;
+}
+
+/*card style*/
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Display cards in a row */
+.slide-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Explore section*/
+.discover-section {
+    padding: 50px 0;
+    text-align: center;
+    background: rgb(255, 61, 61);
+    background: linear-gradient(0deg, hsl(0, 100%, 98%) 0%, rgb(249, 144, 144) 100%);
+}
+
+.discover-section h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.discover-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.discover-section .btn {
+    background-color: #d42b2b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.discover-section .btn:hover {
+    background-color: #e60000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/*footer section*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.animated-line {
+    border: none;
+    height: 1px;
+    background-color: #d20000;
+    margin: 0px auto;
+    width: 0;
+    animation: growLine 5s ease forwards;
+}
+
+
+/*Contact us section*/
+.contact-section {
+    background: rgb(255, 61, 61);
+    background: linear-gradient(0deg, hsl(0, 100%, 98%) 20%, rgb(255, 115, 115) 100%);
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-section textarea {
+    height: 150px;
+}
+
+.contact-section button {
+    background-color: #be2525;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.contact-section button:hover {
+    background-color: #e63900;
+}
+
+@keyframes growLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 991px) {
+    section {
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+
+    section .contentBx {
+        max-width: 100%;
+    }
+
+    section .imgBx img {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    section {
+        flex-direction: column;
+        padding-top: 150px 20px 50px;
+        height: auto;
+    }
+
+    section .contentBx h2 {
+        font-size: 40px;
+    }
+
+    section .contentBx p {
+        font-size: 16px;
+    }
+
+    section .contentBx a {
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        background: #ff0083;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 40px;
+    }
+}

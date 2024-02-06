@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background: hsl(0, 100%, 98%);
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    padding: 15px 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: rgb(255, 61, 61);
+    background: linear-gradient(0deg, hsl(0, 100%, 98%) 0%, rgb(255, 50, 50) 100%);
+}
+
+.title a {
+    font-family: Kalam;
+    color: #312b2b;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+nav {
+    position: relative;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 5px 15px;
+    display: flex;
+    z-index: 1;
+    color: #fff;
+    background: hsl(0, 100%, 98%);
+}
+
+nav a {
+    text-decoration: none;
+    color: #303030;
+    background: hsl(0, 100%, 98%);
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 10px rgb(255, 54, 54), 0px 0px 30px rgb(255, 54, 104);
+}
+
+
+/*Card info*/
+.card-info-section {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(203, 249, 248) 0%, rgb(255, 229, 229) 100%);
+    padding: 50px 0;
+}
+
+.card-info-section h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-info-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card-info-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-info-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card-info-section button {
+    background-color: #fe5757;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card-info-section button:hover {
+    background-color: #e60000;
+}
+
+/*footer section*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*media*/
+@media (max-width: 991px) {
+    section {
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+
+    section .contentBx {
+        max-width: 100%;
+    }
+
+    section .imgBx img {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    section {
+        flex-direction: column;
+        padding-top: 150px 20px 50px;
+        height: auto;
+    }
+
+    section .contentBx h2 {
+        font-size: 40px;
+    }
+
+    section .contentBx p {
+        font-size: 16px;
+    }
+
+    section .contentBx a {
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        background: #ff0083;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 40px;
+    }
+}
